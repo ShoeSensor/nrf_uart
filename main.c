@@ -22,7 +22,19 @@
 #include "nrf_delay.h"
 #include "nrf.h"
 #include "bsp.h"
+#include "nrf_uartDriver.h"
+#include <string.h>
+
+char readVal[20];
+char val[20];
+
 
 int main(void) {
-
+    memset(readVal, 0, sizeof(readVal));
+    memset(val, 0, sizeof(val));
+    uart_init();
+    while(1) {
+        nrf_delay_ms(500);
+        uart_write("dikdikdikdik\n", 13);
+    }
 }

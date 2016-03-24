@@ -46,6 +46,7 @@ endif
 #Project specific files 
 INC_PATHS  += -I$(abspath $(PROJ_HOME)/config)
 INC_PATHS  += -I$(abspath $(PROJ_HOME)/include)
+C_SOURCE_FILES += $(abspath $(PROJ_HOME)/src/nrf_uartDriver.c)
 
 #source common to all targets
 C_SOURCE_FILES += \
@@ -92,7 +93,7 @@ else
 endif
 
 #flags common to all targets
-CFLAGS  = -DNRF51
+CFLAGS += -DNRF51
 CFLAGS += -DBOARD_PCA10028
 CFLAGS += -DBSP_DEFINES_ONLY
 CFLAGS += -mcpu=cortex-m0
