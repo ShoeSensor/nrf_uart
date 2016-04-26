@@ -15,11 +15,11 @@
  */
 
 /** @file
- * @defgroup uart driver
+ * @defgroup uart UART Device Driver
  * @{
- * @ingroup peripherals
+ * @ingroup dd
  *
- * @brief uart driver abstraction layer
+ * @brief UART driver abstraction layer.
  *
  */
 
