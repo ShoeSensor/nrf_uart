@@ -78,6 +78,8 @@ INC_PATHS += -I$(abspath $(SDK_ROOT)/components/toolchain)
 INC_PATHS += -I$(abspath $(SDK_ROOT)/components/drivers_nrf/config)
 INC_PATHS += -I$(abspath $(SDK_ROOT)/components/libraries/fifo)
 INC_PATHS += -I$(abspath $(SDK_ROOT)/components/toolchain/gcc)
+INC_PATHS += -I$(abspath $(SDK_ROOT)/components/toolchain/CMSIS/Include)
+
 
 OBJECT_DIRECTORY = _build
 LISTING_DIRECTORY = $(OBJECT_DIRECTORY)
